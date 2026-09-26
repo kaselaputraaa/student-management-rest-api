@@ -64,16 +64,16 @@ http://localhost:3000
 | DELETE | `/api/siswa/:id` | Menghapus data siswa berdasarkan ID |
 
 ## 7. Screenshot Aplikasi
-![Halaman utama ](readme/SsFrontend/halaman.png)
-![DaftarSiswa ](readme/SsFrontend/DaftarSiswa.png)
-![ketika ada yg belum diisi ](readme/SsFrontend/respons.png)
-![HasilData ](readme/SsFrontend/HasilData.png)
+![Halaman utama ](Screenshot/SsFrontend/halaman.png)
+![DaftarSiswa ](Screenshot/SsFrontend/DaftarSiswa.png)
+![ketika ada yg belum diisi ](Screenshot/SsFrontend/respons.png)
+![HasilData ](Screenshot/SsFrontend/HasilData.png)
 
 ## Screenshot API
-![POST ](readme/SsRestAPI/PostData.png)
-![GetAll ](readme/SsRestAPI/GetAll.png)
-![Delete ](readme/SsRestAPI/DeleteData.png)
-![PUT ](readme/SsRestAPI/PutData.png)
+![POST ](Screenshot/SsRestAPI/PostData.png)
+![GetAll ](Screenshot/SsRestAPI/GetAll.png)
+![Delete ](Screenshot/SsRestAPI/DeleteData.png)
+![PUT ](rScreenshot/SsRestAPI/PutData.png)
 
 
 ## 8. Identitas Pembuat
