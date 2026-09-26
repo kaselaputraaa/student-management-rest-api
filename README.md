@@ -73,7 +73,7 @@ http://localhost:3000
 ![POST ](Screenshot/SsRestAPI/PostData.png)
 ![GetAll ](Screenshot/SsRestAPI/GetAll.png)
 ![Delete ](Screenshot/SsRestAPI/DeleteData.png)
-![PUT ](rScreenshot/SsRestAPI/PutData.png)
+![PUT ](Screenshot/SsRestAPI/PutData.png)
 
 
 ## 8. Identitas Pembuat
