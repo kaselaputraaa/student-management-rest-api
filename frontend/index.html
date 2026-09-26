@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Data Siswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Manajemen Data Siswa</h1>
+            <p>Kelola data siswa melalui REST API</p>
+        </header>
+
+        <section class="form-section">
+            <h2 id="formTitle">Tambah Siswa</h2>
+
+            <div id="message" class="message" role="alert" hidden></div>
+
+            <form id="studentForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nis">NIS</label>
+                        <input type="text" id="nis" name="nis" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nama">Nama Siswa</label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kelas">Kelas</label>
+                        <select id="kelas" name="kelas" required>
+                            <option value="">Pilih kelas</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jurusan">Jurusan</label>
+                        <select id="jurusan" name="jurusan" required>
+                            <option value="">Pilih jurusan</option>
+                            <option value="AKT">AKT</option>
+                            <option value="TKJ">TKJ</option>
+                            <option value="DKV">DKV</option>
+                            <option value="RPL">RPL</option>
+                            <option value="BIDI">BIDI</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="alamat">Alamat</label>
+                        <textarea id="alamat" name="alamat" rows="3" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="submitButton" class="btn btn-primary">
+                        Simpan Siswa
+                    </button>
+
+                    <button type="button" id="cancelButton" class="btn btn-secondary" hidden>
+                        Batal Edit
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="table-section">
+           <div class="table-heading">
+    <h2>Daftar Siswa</h2>
+
+    <div class="table-actions">
+        <input
+            type="search"
+            id="searchInput"
+            placeholder="Cari NIS, nama, kelas, jurusan, atau alamat..."
+            aria-label="Cari data siswa"
+        >
+
+        <button type="button" id="refreshButton" class="btn btn-secondary">
+            Muat Ulang
+        </button>
+    </div>
+</div>
+
+            <div id="loading" class="loading" hidden>
+                Sedang mengambil data siswa...
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIS</th>
+                            <th>Nama</th>
+                            <th>Kelas</th>
+                            <th>Jurusan</th>
+                            <th>Alamat</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="studentTable">
+                        <tr>
+                            <td colspan="7">Data belum dimuat.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
