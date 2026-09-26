@@ -1,80 +1,86 @@
 
 # Student Management REST API
 
-Aplikasi manajemen data siswa berbasis REST API menggunakan Express.js dan MySQL, dengan frontend HTML, CSS, dan JavaScript.
+## 1. Nama Aplikasi
+**Student Management — Aplikasi Manajemen Data Siswa**
 
-## Fitur
+## 2. Deskripsi Aplikasi
+Student Management adalah aplikasi untuk mengelola data siswa. Aplikasi ini memungkinkan pengguna dapat melihat, menambahkan, mengubah, menghapus, dan mencari data siswa.
 
-- Menampilkan semua data siswa
-- Menampilkan detail siswa berdasarkan ID
-- Menambahkan data siswa
-- Mengubah data siswa
-- Menghapus data siswa
-- Mencari data siswa melalui frontend
+Data siswa disimpan menggunakan database MySQL. Backend dibuat menggunakan Express.js, sedangkan frontend menggunakan HTML, CSS, dan JavaScript untuk berkomunikasi dengan API.
 
-## Teknologi
-
+## 3. Teknologi yang Digunakan
 - Node.js
 - Express.js
 - MySQL
+- mysql2
 - HTML
 - CSS
 - JavaScript
+- Fetch API
+- Git dan GitHub
 
-## Struktur Project
+## 4. Cara Menjalankan Backend
 
-text
-data_manajemen_siswa
-├── backend/
-│    └── db.js
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-├── node_modules
-├── server.js
-├── package.json
-├── package-lock.json
-└── README.md
-
-
-## Persiapan Database
-
-Buat database MySQL bernama `db_siswa` dan tabel `siswa` sesuai struktur database yang digunakan oleh aplikasi.
-
-Pastikan konfigurasi koneksi database di project sudah sesuai dengan MySQL lokal.
-
-## Cara Menjalankan
-
+### Persiapan
 1. Pastikan Node.js dan MySQL sudah terpasang.
-2. Buka terminal di folder project.
-3. Install dependency:
+2. Jalankan MySQL melalui Laragon atau aplikasi yang digunakan.
+3. Buat database `db_siswa` dan tabel `siswa` sesuai struktur database project.
+4. Pastikan konfigurasi koneksi database di project sudah benar.
+
+### Menjalankan Server
+Buka terminal pada folder project, kemudian jalankan:
 
 git bash
-   npm install
-   
+    npm install
 
-4. Jalankan server:
+Setelah dependency selesai di-install, jalankan server:
 
-   node server.js
-   
+git bash
+    node server.js
 
-5. Buka file `frontend/index.html` menggunakan Live Server (karena saya memakai live server)
 
-## API Endpoint
+Jika server berhasil berjalan, backend dapat diakses melalui:
+
+
+http://localhost:3000
+
+
+## 5. Cara Menjalankan Frontend
+1. Pastikan backend sudah berjalan.
+2. Buka folder `frontend`.
+3. Jalankan file `index.html` menggunakan ekstensi Live Server di Visual Studio Code.
+4. Aplikasi akan terbuka di browser.
+5. Pastikan frontend menggunakan alamat API backend yang benar.
+
+## 6. Daftar Endpoint API
 
 | Method | Endpoint | Fungsi |
 |---|---|---|
-| GET | `/api/siswa` | Untuk Menampilkan semua siswa |
-| GET | `/api/siswa/:id` | Untuk Menampilkan detail siswa |
-| POST | `/api/siswa` | Untuk Menambahkan siswa |
-| PUT | `/api/siswa/:id` | Untuk Mengubah data siswa |
-| DELETE | `/api/siswa/:id` | Untuk Menghapus siswa |
+| GET | `/api/siswa` | Menampilkan semua data siswa |
+| GET | `/api/siswa/:id` | Menampilkan detail siswa berdasarkan ID |
+| POST | `/api/siswa` | Menambahkan data siswa |
+| PUT | `/api/siswa/:id` | Mengubah data siswa berdasarkan ID |
+| DELETE | `/api/siswa/:id` | Menghapus data siswa berdasarkan ID |
 
-## Pengujian API
+## 7. Screenshot Aplikasi
+![Halaman utama ](readme/SsFrontend/halaman.png)
+![DaftarSiswa ](readme/SsFrontend/DaftarSiswa.png)
+![ketika ada yg belum diisi ](readme/SsFrontend/respons.png)
+![HasilData ](readme/SsFrontend/HasilData.png)
 
-API dapat diuji menggunakan Postman.
+## Screenshot API
+![POST ](readme/SsRestAPI/PostData.png)
+![GetAll ](readme/SsRestAPI/GetAll.png)
+![Delete ](readme/SsRestAPI/DeleteData.png)
+![PUT ](readme/SsRestAPI/PutData.png)
 
-## Repository
 
-GitHub: https://github.com/kaselaputraaa/student-management-rest-api
+## 8. Identitas Pembuat
+
+- **Nama:** [Putra Kasela]
+- **Kelas:** [ 12 ]
+- **Jurusan:** [ RPL ]
+
+URL Repository GirHUb:
+https://github.com/kaselaputraaa/student-management-rest-api
